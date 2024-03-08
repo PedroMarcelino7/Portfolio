@@ -1,0 +1,38 @@
+header {
+    .button_box {
+        transform: translate(0, 0);
+
+        button {
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+            border: 1px solid #fff;
+            background: transparent;
+            transition: all 0.5s ease-in-out;
+
+            svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                fill: none;
+                stroke: #fff;
+                stroke-width: 5px;
+                stroke-dasharray: 150 480;
+                stroke-dashoffset: 150;
+                transition: 1s ease-in-out;
+            }
+        }
+        
+        button:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            
+            svg {
+                transform: translate(-5px, -5px);
+                background-color: transparent;
+                border: none;
+                stroke-dashoffset: -480;
+            }
+        }
+    }
+}
