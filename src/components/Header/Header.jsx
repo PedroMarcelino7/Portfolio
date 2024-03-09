@@ -40,7 +40,7 @@ export default function Header() {
                             type="translate"
                             dur="5s"
                             calcMode="spline"
-                            values="270 250; -340 200; 270 250"
+                            values="270 200; -340 150; 270 200"
                             keyTimes="0; .5; 1"
                             keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
                             repeatCount="indefinite" />
@@ -52,7 +52,7 @@ export default function Header() {
                             type="translate"
                             dur="7s"
                             calcMode="spline"
-                            values="-270 300; 200 220 ;-270 300"
+                            values="-270 250; 200 175 ;-270 250"
                             keyTimes="0; .6; 1"
                             keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
                             repeatCount="indefinite" />
@@ -64,7 +64,7 @@ export default function Header() {
                             type="translate"
                             dur="9s"
                             calcMode="spline"
-                            values="0 350; -300 300; 0 350"
+                            values="0 300; -300 250; 0 300"
                             keyTimes="0; .4; 1"
                             keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
                             repeatCount="indefinite" />
