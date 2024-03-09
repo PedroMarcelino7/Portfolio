@@ -1,6 +1,16 @@
 .project_card {
     border: 2px solid rgba(0, 0, 0, 0.3);
 
+    img {
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    img:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+    }
+
     .project_description {
         padding-block: 1rem;
         padding-inline: 1.5rem;
@@ -9,8 +19,6 @@
             text-align: justify;
         }
 
-        .tag {
-            
-        }
+        .tag {}
     }
 }

@@ -8,10 +8,13 @@ import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/captions.css"
 import "yet-another-react-lightbox/styles.css"
 
+
 import { slides } from '../../data'
 
 export default function Projects() {
     const [open, setOpen] = useState(false)
+    const [renderPrev, setRenderPrev] = useState(false);
+    const [renderNext, setRenderNext] = useState(false);
 
     return (
         <div className="container">
@@ -25,21 +28,29 @@ export default function Projects() {
 
                             {/* MAP TECHNOLOGIES */}
                             <div>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> {/* MAP */}
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                {/* MAP */}
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
                             </div>
 
-                            <button onClick={() => setOpen(true)}>Description</button>
+                            <div className="d-flex justify-content-end">
+                                <button className='btn btn-outline-info fw-bold fs-6' onClick={() => setOpen(true)}>Description</button>
+                            </div>
                         </div>
 
                         <Lightbox
                             plugins={[Captions, Zoom]}
                             open={open}
+                            hideControls={true}
+                            render={{
+                                buttonPrev: renderPrev ? undefined : () => null,
+                                buttonNext: renderNext ? undefined : () => null,
+                            }}
                             slides={[
                                 {
                                     src: slides[0].src,
