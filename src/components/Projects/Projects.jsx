@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import Lightbox from 'yet-another-react-lightbox';
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/captions.css";
+import React, { useState } from 'react'
+import Lightbox from 'yet-another-react-lightbox'
+import Captions from "yet-another-react-lightbox/plugins/captions"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/captions.css"
 
-import { slides } from '../../data';
-import styles from './Projects.module.scss';
+import { slides } from '../../data'
+import styles from './Projects.module.scss'
 
 export default function Projects() {
-    const [openLightboxIndex, setOpenLightboxIndex] = useState(null);
-    const [renderPrev, setRenderPrev] = useState(false);
-    const [renderNext, setRenderNext] = useState(false);
+    const [openLightboxIndex, setOpenLightboxIndex] = useState(null)
+    const [renderPrev, setRenderPrev] = useState(false)
+    const [renderNext, setRenderNext] = useState(false)
 
     const openLightbox = (index) => {
-        setOpenLightboxIndex(index);
-    };
+        setOpenLightboxIndex(index)
+    }
 
     const closeLightbox = () => {
-        setOpenLightboxIndex(null);
-    };
+        setOpenLightboxIndex(null)
+    }
 
     return (
         <div className="container">
@@ -29,7 +29,6 @@ export default function Projects() {
                         <div className={`rounded-3 ${styles.project_card}`}>
                             <img
                                 className='img-fluid rounded-top-3 w-100'
-                                style={{ height: '350px' }}
                                 onClick={() => openLightbox(index)}
                                 src={slide.src}
                                 alt=""

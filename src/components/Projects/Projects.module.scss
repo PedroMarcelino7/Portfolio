@@ -4,6 +4,7 @@
     img {
         cursor: pointer;
         transition: all 0.5s;
+        height: 200px;
     }
 
     img:hover {
@@ -18,7 +19,27 @@
         p {
             text-align: justify;
         }
+    }
+}
 
-        .tag {}
+@media (min-width: 450px) {
+    .project_card {
+        img {
+            height: 250px;
+        }
+    }
+}
+@media (min-width: 550px) {
+    .project_card {
+        img {
+            height: 300px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .project_card {
+        img {
+            height: 350px;
+        }
     }
 }
