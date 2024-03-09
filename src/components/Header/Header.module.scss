@@ -10,7 +10,7 @@ header {
             background: transparent;
             transition: all 0.5s ease-in-out;
 
-            svg {
+            .button_effect {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -22,17 +22,26 @@ header {
                 transition: 1s ease-in-out;
             }
         }
-        
+
         button:hover {
             transform: translate(-5px, -5px);
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            
-            svg {
+
+            .button_effect {
                 transform: translate(-5px, -5px);
                 background-color: transparent;
                 border: none;
                 stroke-dashoffset: -480;
             }
         }
+    }
+
+    .svg_background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
 }
