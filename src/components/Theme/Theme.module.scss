@@ -1,0 +1,16 @@
+.theme_container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    .theme_box {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        transition: all 1s;
+    }
+    .theme_box:hover {
+        transform: scale(1.35);
+        transition: all 0.3s;
+    }
+}

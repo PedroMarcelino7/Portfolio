@@ -2,6 +2,7 @@ import './App.scss'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
+import Theme from './components/Theme/Theme'
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Navbar />
 
       <Projects />
+
+      <Theme />
     </div>
   )
 }

@@ -19,9 +19,9 @@ export default function Projects() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-5">
                     <div className={`rounded-3 ${styles.project_card}`}>
-                        <img className='img-fluid rounded-top-3' src={slides[0].src} alt="" />
+                        <img className='img-fluid rounded-top-3' onClick={() => setOpen(true)} src={slides[0].src} alt="" />
 
                         <div className={styles.project_description}>
                             <h1>{slides[0].title}</h1>
@@ -29,13 +29,13 @@ export default function Projects() {
                             {/* MAP TECHNOLOGIES */}
                             <div>
                                 {/* MAP */}
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
-                                <span class="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
+                                <span className="badge text-bg-primary fs-6 m-1">Primary</span>
                             </div>
 
                             <div className="d-flex justify-content-end">
