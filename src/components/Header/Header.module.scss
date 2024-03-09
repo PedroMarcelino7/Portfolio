@@ -1,6 +1,9 @@
 header {
+    background-color: black;
+
     .button_box {
         transform: translate(0, 0);
+        z-index: 2;
 
         button {
             width: 180px;
@@ -25,7 +28,7 @@ header {
 
         button:hover {
             transform: translate(-5px, -5px);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.15);
 
             .button_effect {
                 transform: translate(-5px, -5px);
@@ -42,6 +45,6 @@ header {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: 1;
     }
 }

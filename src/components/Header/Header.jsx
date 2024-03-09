@@ -3,16 +3,16 @@ import styles from './Header.module.scss'
 export default function Header() {
     return (
         <header className={`position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}>
-            <h1>Pedro Paulo Marcelino</h1>
+            <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
             <div className={styles.button_box}>
                 <button>
-                    <svg className={styles.button_effect}  width="180px" height="60px" viewBox="0 0 180 60">
+                    <svg className={styles.button_effect} width="180px" height="60px" viewBox="0 0 180 60">
                         <polyline points="179,1 179,59 1,59 1,1 179,1" />
                         <polyline points="179,1 179,59 1,59 1,1 179,1" />
                     </svg>
 
-                    <span className='fw-bold fs-5'>DETAILS</span>
+                    <span className='fw-bold fs-5 text-white'>DETAILS</span>
                 </button>
             </div>
 
@@ -24,14 +24,14 @@ export default function Header() {
             >
                 <defs>
                     <linearGradient id="bg">
-                        <stop offset="0%" style={{ stopColor: 'rgba(130, 158, 249, 0.06)' }}></stop>
-                        <stop offset="50%" style={{ stopColor: 'rgba(76, 190, 255, 0.6)' }}></stop>
-                        <stop offset="100%" style={{ stopColor: 'rgba(115, 209, 72, 0.2)' }}></stop>
+                        <stop offset="0%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
+                        <stop offset="50%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
+                        <stop offset="100%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
                     </linearGradient>
                     <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
                 </defs>
                 <g>
-                    <use xlinkHref='#wave' opacity=".3">
+                    <use xlinkHref='#wave' opacity="0.15">
                         <animateTransform
                             attributeName="transform"
                             attributeType="XML"
@@ -43,7 +43,7 @@ export default function Header() {
                             keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
                             repeatCount="indefinite" />
                     </use>
-                    <use xlinkHref='#wave' opacity=".6">
+                    <use xlinkHref='#wave' opacity="0.35">
                         <animateTransform
                             attributeName="transform"
                             attributeType="XML"
@@ -55,7 +55,7 @@ export default function Header() {
                             keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
                             repeatCount="indefinite" />
                     </use>
-                    <use xlinkHref='#wave' opacty=".9">
+                    <use xlinkHref='#wave' opacity="1">
                         <animateTransform
                             attributeName="transform"
                             attributeType="XML"
