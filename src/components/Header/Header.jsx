@@ -3,7 +3,7 @@ import styles from './Header.module.scss'
 export default function Header() {
     return (
         <header className={`d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}>
-            <h1>Pedro Paulo Marcelino</h1>
+            <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
             <div className={styles.button_box}>
                 <button>
@@ -12,7 +12,7 @@ export default function Header() {
                         <polyline points="179,1 179,59 1,59 1,1 179,1" />
                     </svg>
                     
-                    <span className='fw-bold fs-5'>DETAILS</span>
+                    <span className='fw-bold fs-5 text-white'>DETAILS</span>
                 </button>
             </div>
         </header>
