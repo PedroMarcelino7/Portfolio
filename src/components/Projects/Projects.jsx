@@ -14,28 +14,27 @@ export default function Projects() {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className='container'>
+        <div className="container">
             <div className="row">
-                <h1>Projects</h1>
+                <div className="col-lg-6">
+                    <div className={`rounded-3 ${styles.project_card}`}>
+                        <img className='img-fluid rounded-top-3' src={slides[0].src} alt="" />
 
-                <div className="col-12">
-                    <div className={`row ${styles.project_box}`}>
-                        <h2>Project name</h2>
+                        <div className={styles.project_description}>
+                            <h1>{slides[0].title}</h1>
 
-                        <div className="col-6">
-                            <figure onClick={() => setOpen(true)}>
-                                <img className='img-fluid' src={slides[0].src} alt="" />
-                            </figure>
-                        </div>
-
-                        <div className="col-6">
-                            <div className={styles.project_description}>
-                                <p className="lead">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, veniam reprehenderit? Cupiditate pariatur expedita nisi odio ipsa placeat, ratione dolorum voluptate adipisci sit dolorem dolor!
-                                </p>
-
-                                <button onClick={() => setOpen(true)}>Ler mais</button>
+                            {/* MAP TECHNOLOGIES */}
+                            <div>
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> {/* MAP */}
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
+                                <span class="badge text-bg-primary fs-6 m-1">Primary</span> 
                             </div>
+
+                            <button onClick={() => setOpen(true)}>Description</button>
                         </div>
 
                         <Lightbox

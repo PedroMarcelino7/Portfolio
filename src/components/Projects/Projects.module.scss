@@ -1,0 +1,16 @@
+.project_card {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+
+    .project_description {
+        padding-block: 1rem;
+        padding-inline: 1.5rem;
+
+        p {
+            text-align: justify;
+        }
+
+        .tag {
+            
+        }
+    }
+}
