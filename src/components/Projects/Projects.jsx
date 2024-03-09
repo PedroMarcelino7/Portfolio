@@ -18,7 +18,7 @@ export default function Projects() {
             <div className="row">
                 <h1>Projects</h1>
 
-                <div className="col-6">
+                <div className="col-12">
                     <div className={`row ${styles.project_box}`}>
                         <h2>Project name</h2>
 
