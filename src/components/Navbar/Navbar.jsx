@@ -2,7 +2,7 @@ import styles from './Navbar.module.scss'
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-md navbar-dark">
+        <nav className="navbar navbar-expand-md navbar-dark" id='navbar'>
             <div className="container">
                 <button className="navbar-toggler" type='button'
                     data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"

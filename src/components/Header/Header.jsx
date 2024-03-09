@@ -6,14 +6,16 @@ export default function Header() {
             <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
             <div className={styles.button_box}>
-                <button>
-                    <svg className={styles.button_effect} width="180px" height="60px" viewBox="0 0 180 60">
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                    </svg>
+                <a href="#navbar">
+                    <button>
+                        <svg className={styles.button_effect} width="180px" height="60px" viewBox="0 0 180 60">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                        </svg>
 
-                    <span className='fw-bold fs-5 text-white'>DETAILS</span>
-                </button>
+                        <span className='fw-bold fs-5 text-white'>DETAILS</span>
+                    </button>
+                </a>
             </div>
 
             <svg
