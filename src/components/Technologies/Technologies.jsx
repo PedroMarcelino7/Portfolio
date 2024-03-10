@@ -1,23 +1,38 @@
 import styles from './Technologies.module.scss'
 
-import { technologies } from '../../data'
+import { useState, useEffect } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { technologies } from '../../data'
 
 export default function Technologies() {
+    const [slidePerView, setSlidePerView] = useState(1)
+
+    function handleResize() {
+        if (window.innerWidth < 768) {
+            setSlidePerView(1)
+        } else if (window.innerWidth < 992) {
+            setSlidePerView(2)
+        } else {
+            setSlidePerView(3)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+    }, [])
+
     return (
         <section id='technologies'>
             <div className="container my-5">
                 <Swiper
-                    spaceBetween={50}
-                    slidesPerView={1}
+                    spaceBetween={0}
+                    slidesPerView={slidePerView}
                     navigation
-                    pagination={{ clickable: true }}
-                // scrollbar={{ draggable: true }}
                 >
                     {technologies.map((technology, index) => (
-                        <SwiperSlide key={index}>
-                            <img src={technology.image} alt="" style={{ width: '100%', height: '300px' }} />
+                        <SwiperSlide key={index} className='d-flex justify-content-center align-items-center'>
+                            <img src={technology.image} alt="" style={{ width: '200px', height: '150px' }} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
