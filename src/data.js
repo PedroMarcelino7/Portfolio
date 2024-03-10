@@ -1,4 +1,5 @@
 import project1 from './images/PasswordGenerator.png'
+import project2 from './images/QRCodeGenerator.png'
 
 export const slides = [
     {
@@ -9,11 +10,11 @@ export const slides = [
         technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
-        src: 'https://images.unsplash.com/photo-1682686581551-867e0b208bd1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: '',
+        src: project2,
+        title: 'QR Code Generator',
         description: '',
-        page: '',
-        technologies: ['tech', 'tech', 'tech', 'tech']
+        page: 'https://pedromarcelino7.github.io/QRCodeGenerator',
+        technologies: ['React', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
         src: 'https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
