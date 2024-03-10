@@ -13,23 +13,27 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current='page'>Home</a>
+                            <a href="#header" className="nav-link fs-5" aria-current='page'>Socials</a>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current='page'>Discover</a>
+                            <a href="#navbar" className="nav-link fs-5" aria-current='page'>Projects</a>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current='page'>Summary</a>
+                            <a href="#" className="nav-link fs-5" aria-current='page'>About</a>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current='page'>Takeaways</a>
+                            <a href="#" className="nav-link fs-5" aria-current='page'>Technologies</a>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current='page'>Subscribe</a>
+                            <a href="#" className="nav-link fs-5" aria-current='page'>Education</a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a href="#" className="nav-link fs-5" aria-current='page'>Certifications</a>
                         </li>
                     </ul>
 

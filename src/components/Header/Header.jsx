@@ -2,7 +2,10 @@ import styles from './Header.module.scss'
 
 export default function Header() {
     return (
-        <header className={`position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}>
+        <header
+            className={`position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}
+            id='header'
+        >
             <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
             <div className={styles.button_box}>

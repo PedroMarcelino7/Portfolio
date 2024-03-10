@@ -22,7 +22,7 @@ export default function Projects() {
     }
 
     return (
-        <div className="container">
+        <div className="container" id='projects'>
             <div className="row">
                 {slides.map((slide, index) => (
                     <div className="col-lg-6 mb-5" key={index}>
