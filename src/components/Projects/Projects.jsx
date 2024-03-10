@@ -22,7 +22,7 @@ export default function Projects() {
     }
 
     return (
-        <div className="container" id='projects'>
+        <div className="container pt-5" id='projects'>
             <div className="row">
                 {slides.map((slide, index) => (
                     <div className="col-lg-6 mb-5" key={index}>
@@ -35,15 +35,16 @@ export default function Projects() {
                             />
 
                             <div className={styles.project_description}>
-                                <h1>{slide.title}</h1>
+                                <h1 className='fs-3'>{slide.title}</h1>
 
-                                <div>
+                                <div className='mt-2 mb-5'>
                                     {slide.technologies.map((technology, key) => (
                                         <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
                                     ))}
                                 </div>
 
-                                <div className="d-flex justify-content-end">
+                                <div className="d-flex justify-content-between">
+                                    <a href={slide.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
                                     <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(index)}>Description</button>
                                 </div>
                             </div>
