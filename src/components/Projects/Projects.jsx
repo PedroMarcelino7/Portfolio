@@ -5,7 +5,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/captions.css"
 
-import { slides } from '../../data'
+import { projects } from '../../data'
 import styles from './Projects.module.scss'
 
 export default function Projects() {
@@ -25,27 +25,27 @@ export default function Projects() {
         <section id="projects">
             <div className="container pt-5">
                 <div className="row">
-                    {slides.map((slide, index) => (
+                    {projects.map((project, index) => (
                         <div className="col-lg-6 mb-5" key={index}>
                             <div className={`rounded-3 ${styles.project_card}`}>
                                 <img
                                     className='img-fluid rounded-top-3 w-100'
                                     onClick={() => openLightbox(index)}
-                                    src={slide.src}
+                                    src={project.src}
                                     alt=""
                                 />
 
                                 <div className={styles.project_description}>
-                                    <h1 className='fs-3'>{slide.title}</h1>
+                                    <h1 className='fs-3'>{project.title}</h1>
 
                                     <div className='mt-2 mb-5'>
-                                        {slide.technologies.map((technology, key) => (
+                                        {project.technologies.map((technology, key) => (
                                             <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
                                         ))}
                                     </div>
 
                                     <div className="d-flex justify-content-between">
-                                        <a href={slide.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
+                                        <a href={project.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
                                         <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(index)}>Description</button>
                                     </div>
                                 </div>
@@ -64,9 +64,9 @@ export default function Projects() {
                             }}
                             slides={[
                                 {
-                                    src: slides[openLightboxIndex].src,
-                                    title: slides[openLightboxIndex].title,
-                                    description: slides[openLightboxIndex].description,
+                                    src: projects[openLightboxIndex].src,
+                                    title: projects[openLightboxIndex].title,
+                                    description: projects[openLightboxIndex].description,
                                 }
                             ]}
                             close={closeLightbox}

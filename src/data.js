@@ -1,8 +1,8 @@
-import project1 from './images/PasswordGenerator.png'
-import project2 from './images/QRCodeGenerator.png'
-import project3 from './images/BillSplitter.png'
+import project1 from './images/projects/PasswordGenerator.png'
+import project2 from './images/projects/QRCodeGenerator.png'
+import project3 from './images/projects/BillSplitter.png'
 
-export const slides = [
+export const projects = [
     {
         src: project1,
         title: 'Password Generator',
@@ -25,4 +25,30 @@ export const slides = [
         page: 'https://pedromarcelino7.github.io/BillSplitter',
         technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
+]
+
+// ---
+
+import technology1 from './images/technologies/React.png'
+import technology2 from './images/technologies/Typescript.png'
+
+export const technologies = [
+    {
+        image: technology1
+    },
+    {
+        image: technology2
+    },
+    // {
+    //     image: technology3
+    // },
+    // {
+    //     image: technology4
+    // },
+    // {
+    //     image: technology5
+    // },
+    // {
+    //     image: technology6
+    // },
 ]

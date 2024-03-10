@@ -3,6 +3,7 @@ import About from './components/About/About'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
+import Technologies from './components/Technologies/Technologies'
 import Theme from './components/Theme/Theme'
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
         <Projects />
 
         <About />
+
+        <Technologies />
       </div>
+      
       <Theme />
     </>
   )

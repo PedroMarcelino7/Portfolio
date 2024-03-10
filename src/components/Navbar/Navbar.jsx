@@ -25,7 +25,7 @@ export default function Navbar() {
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" className="nav-link fs-5" aria-current='page'>Technologies</a>
+                            <a href="#technologies" className="nav-link fs-5" aria-current='page'>Technologies</a>
                         </li>
 
                         <li className="nav-item">
