@@ -1,4 +1,5 @@
 import './App.scss'
+import About from './components/About/About'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
@@ -6,15 +7,18 @@ import Theme from './components/Theme/Theme'
 
 function App() {
   return (
-    <div className='overflow'>
-      <Header />
+    <>
+      <div className='overflow'>
+        <Header />
 
-      <Navbar />
+        <Navbar />
 
-      <Projects />
+        <Projects />
 
+        <About />
+      </div>
       <Theme />
-    </div>
+    </>
   )
 }
 

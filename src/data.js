@@ -1,5 +1,6 @@
 import project1 from './images/PasswordGenerator.png'
 import project2 from './images/QRCodeGenerator.png'
+import project3 from './images/BillSplitter.png'
 
 export const slides = [
     {
@@ -13,15 +14,16 @@ export const slides = [
         src: project2,
         title: 'QR Code Generator',
         description: '',
+        //FALAR QUE ESSE PROJETO TINHA SIDO FEITO COM VUE, E DEPOIS TROCADO PARA REACT
         page: 'https://pedromarcelino7.github.io/QRCodeGenerator',
-        technologies: ['React', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        technologies: ['React', 'Vue', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
-        src: 'https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: '',
+        src: project3,
+        title: 'Bill Splitter',
         description: '',
-        page: '',
-        technologies: ['tech', 'tech', 'tech', 'tech']
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
         src: 'https://images.unsplash.com/photo-1700744228339-03c725f5ee57?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

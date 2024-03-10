@@ -22,56 +22,58 @@ export default function Projects() {
     }
 
     return (
-        <div className="container pt-5" id='projects'>
-            <div className="row">
-                {slides.map((slide, index) => (
-                    <div className="col-lg-6 mb-5" key={index}>
-                        <div className={`rounded-3 ${styles.project_card}`}>
-                            <img
-                                className='img-fluid rounded-top-3 w-100'
-                                onClick={() => openLightbox(index)}
-                                src={slide.src}
-                                alt=""
-                            />
+        <section id="projects">
+            <div className="container pt-5">
+                <div className="row">
+                    {slides.map((slide, index) => (
+                        <div className="col-lg-6 mb-5" key={index}>
+                            <div className={`rounded-3 ${styles.project_card}`}>
+                                <img
+                                    className='img-fluid rounded-top-3 w-100'
+                                    onClick={() => openLightbox(index)}
+                                    src={slide.src}
+                                    alt=""
+                                />
 
-                            <div className={styles.project_description}>
-                                <h1 className='fs-3'>{slide.title}</h1>
+                                <div className={styles.project_description}>
+                                    <h1 className='fs-3'>{slide.title}</h1>
 
-                                <div className='mt-2 mb-5'>
-                                    {slide.technologies.map((technology, key) => (
-                                        <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
-                                    ))}
-                                </div>
+                                    <div className='mt-2 mb-5'>
+                                        {slide.technologies.map((technology, key) => (
+                                            <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
+                                        ))}
+                                    </div>
 
-                                <div className="d-flex justify-content-between">
-                                    <a href={slide.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
-                                    <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(index)}>Description</button>
+                                    <div className="d-flex justify-content-between">
+                                        <a href={slide.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
+                                        <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(index)}>Description</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
 
-                {openLightboxIndex !== null && (
-                    <Lightbox
-                        plugins={[Captions, Zoom]}
-                        open={true}
-                        hideControls={true}
-                        render={{
-                            buttonPrev: renderPrev ? undefined : () => null,
-                            buttonNext: renderNext ? undefined : () => null,
-                        }}
-                        slides={[
-                            {
-                                src: slides[openLightboxIndex].src,
-                                title: slides[openLightboxIndex].title,
-                                description: slides[openLightboxIndex].description,
-                            }
-                        ]}
-                        close={closeLightbox}
-                    />
-                )}
+                    {openLightboxIndex !== null && (
+                        <Lightbox
+                            plugins={[Captions, Zoom]}
+                            open={true}
+                            hideControls={true}
+                            render={{
+                                buttonPrev: renderPrev ? undefined : () => null,
+                                buttonNext: renderNext ? undefined : () => null,
+                            }}
+                            slides={[
+                                {
+                                    src: slides[openLightboxIndex].src,
+                                    title: slides[openLightboxIndex].title,
+                                    description: slides[openLightboxIndex].description,
+                                }
+                            ]}
+                            close={closeLightbox}
+                        />
+                    )}
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
