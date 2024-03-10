@@ -19,6 +19,7 @@ export default function Technologies() {
     }
 
     useEffect(() => {
+        handleResize()
         window.addEventListener('resize', handleResize)
     }, [])
 
