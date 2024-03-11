@@ -1,5 +1,12 @@
 header {
     background-color: black;
+    
+    .socials_container {
+        a {
+            z-index: 2;
+            cursor: pointer;
+        }
+    }
 
     .button_box {
         transform: translate(0, 0);

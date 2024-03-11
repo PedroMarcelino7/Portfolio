@@ -13,10 +13,16 @@ export default function Header() {
 
     return (
         <header
-            className={`position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}
+            className='position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100'
             id='header'
         >
             <h1 className='text-light'>Pedro Paulo Marcelino</h1>
+
+            <div className={`${styles.socials_container} d-flex align-items-center justify-content-center gap-3 fs-1`}>
+                <a href="https://instagram.com/pedro.marcelino_" target='_blank'><i className="bi bi-instagram"></i></a>
+                <a href="https://github.com/PedroMarcelino7" target='_blank'><i className="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/pedro-paulo-marcelino" target='_blank'><i className="bi bi-linkedin"></i></a>
+            </div>
 
             <div className={styles.button_box}>
                 <a href="#navbar">
