@@ -18,10 +18,24 @@ export default function Header() {
         >
             <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
-            <div className={`${styles.socials_container} d-flex align-items-center justify-content-center gap-3 fs-1`}>
-                <a href="https://instagram.com/pedro.marcelino_" target='_blank'><i className="bi bi-instagram"></i></a>
-                <a href="https://github.com/PedroMarcelino7" target='_blank'><i className="bi bi-github"></i></a>
-                <a href="https://linkedin.com/in/pedro-paulo-marcelino" target='_blank'><i className="bi bi-linkedin"></i></a>
+            <div className={styles.socials_container}>
+                <ul className='list-unstyled d-flex align-items-center justify-content-center gap-3 fs-1'>
+                    <li>
+                        <a href="https://instagram.com/pedro.marcelino_" target='_blank'>
+                            <i className="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PedroMarcelino7" target='_blank'>
+                            <i className="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/pedro-paulo-marcelino" target='_blank'>
+                            <i className="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div className={styles.button_box}>
