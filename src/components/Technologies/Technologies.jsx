@@ -33,7 +33,7 @@ export default function Technologies() {
                 >
                     {technologies.map((technology, index) => (
                         <SwiperSlide key={index} className='d-flex justify-content-center align-items-center'>
-                            <img src={technology.image} alt="" style={{ width: '200px', height: '150px' }} />
+                            <img src={technology.image} alt="" style={{ width: '175px', height: '150px' }} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

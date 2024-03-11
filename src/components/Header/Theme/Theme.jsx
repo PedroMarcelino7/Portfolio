@@ -16,9 +16,9 @@ export default function Theme() {
                 onClick={() => setTheme(!theme)}
             >
                 {theme ?
-                    <i className="fs-4 bi bi-brightness-high-fill"></i>
+                    <i className="fs-4 text-white bi bi-brightness-high-fill"></i>
                     :
-                    <i className="fs-4 bi bi-moon-fill"></i>
+                    <i className="fs-4 text-white bi bi-moon-fill"></i>
                 }
             </div>
         </div>

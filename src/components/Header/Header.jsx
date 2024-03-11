@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react'
 import styles from './Header.module.scss'
 
+import Theme from './Theme/Theme'
+
 export default function Header() {
+    const [darkTheme, setDarkTheme] = useState(true)
+    const [waveBackground, setWaveBackground] = useState('')
+
+    useEffect(() => {
+        darkTheme ? setWaveBackground('rgba(33, 37, 41, 1)') : setWaveBackground('rgba(255, 255, 255, 1)')
+    }, [darkTheme])
+
     return (
         <header
             className={`position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100`}
@@ -29,9 +39,9 @@ export default function Header() {
             >
                 <defs>
                     <linearGradient id="bg">
-                        <stop offset="0%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
-                        <stop offset="50%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
-                        <stop offset="100%" style={{ stopColor: 'rgb(33, 37, 41, 1)' }}></stop>
+                        <stop offset="0%" style={{ stopColor: waveBackground }}></stop>
+                        <stop offset="50%" style={{ stopColor: waveBackground }}></stop>
+                        <stop offset="100%" style={{ stopColor: waveBackground }}></stop>
                     </linearGradient>
                     <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
                 </defs>
@@ -74,6 +84,10 @@ export default function Header() {
                     </use>
                 </g>
             </svg>
+
+            <div onClick={() => setDarkTheme(!darkTheme)}>
+                <Theme />
+            </div>
         </header >
     )
 }
