@@ -19,19 +19,19 @@ export default function Header() {
             <h1 className='text-light'>Pedro Paulo Marcelino</h1>
 
             <div className={styles.socials_container}>
-                <ul className='list-unstyled d-flex align-items-center justify-content-center gap-3 fs-1'>
+                <ul className='list-unstyled d-flex align-items-center justify-content-center fs-1'>
                     <li>
-                        <a href="https://instagram.com/pedro.marcelino_" target='_blank'>
+                        <a id={styles.instagram} href="https://instagram.com/pedro.marcelino_" target='_blank'>
                             <i className="bi bi-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/PedroMarcelino7" target='_blank'>
+                        <a id={styles.github} href="https://github.com/PedroMarcelino7" target='_blank'>
                             <i className="bi bi-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com/in/pedro-paulo-marcelino" target='_blank'>
+                        <a id={styles.linkedin} href="https://linkedin.com/in/pedro-paulo-marcelino" target='_blank'>
                             <i className="bi bi-linkedin"></i>
                         </a>
                     </li>
