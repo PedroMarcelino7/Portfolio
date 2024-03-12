@@ -16,7 +16,10 @@ export default function Header() {
             className='position-relative d-flex flex-column justify-content-center align-items-center vw-100 vh-100'
             id='header'
         >
-            <h1 className='text-light'>Pedro Paulo Marcelino</h1>
+            <div className={`${styles.title} mb-5`}>
+                <h1 className='text-light m-0 fs-1 lh-1'>Hello<span>.</span></h1>
+                <h2 className='text-light m-0 fs-3'>I am <span>Pedro Marcelino</span></h2>
+            </div>
 
             <div className={styles.socials_container}>
                 <ul className='list-unstyled d-flex align-items-center justify-content-center fs-1'>

@@ -1,6 +1,25 @@
 header {
     background-color: black;
 
+    .title {
+        font-family: "Righteous", sans-serif;
+
+        h1 {
+            span {
+                color: #212529;
+            }
+        }
+
+        h2 {
+            span {
+                text-decoration: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: #212529;
+                text-decoration-thickness: 2px;
+            }
+        }
+    }
+
     .socials_container {
         ul {
             li {
