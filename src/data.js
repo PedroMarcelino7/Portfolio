@@ -4,6 +4,7 @@ import project3 from './images/projects/BillSplitter.png'
 
 export const projects = [
     {
+        id: 1,
         src: project1,
         title: 'Password Generator',
         description: '',
@@ -11,6 +12,7 @@ export const projects = [
         technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
+        id: 2,
         src: project2,
         title: 'QR Code Generator',
         description: '',
@@ -19,6 +21,7 @@ export const projects = [
         technologies: ['React', 'Vue', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
     {
+        id: 3,
         src: project3,
         title: 'Bill Splitter',
         description: '',
