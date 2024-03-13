@@ -26,31 +26,31 @@ export default function ProjectsMap({ project, id }) {
 
     return (
         <>
-            <div className="col-lg-6 mb-5" key={id}>
-                <div className={`rounded-3 ${styles.project_card}`}>
-                    <img
-                        className='img-fluid rounded-top-3 w-100'
-                        onClick={() => openLightbox(id)}
-                        src={project.src}
-                        alt=""
-                    />
 
-                    <div className={styles.project_description}>
-                        <h1 className='fs-3'>{project.title}</h1>
+            <div className={`rounded-3 ${styles.project_card}`}>
+                <img
+                    className='img-fluid rounded-top-3 w-100'
+                    onClick={() => openLightbox(id)}
+                    src={project.src}
+                    alt=""
+                />
 
-                        <div className='mt-2 mb-5'>
-                            {project.technologies.map((technology, key) => (
-                                <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
-                            ))}
-                        </div>
+                <div className={styles.project_description}>
+                    <h1 className='fs-3'>{project.title}</h1>
 
-                        <div className="d-flex justify-content-between">
-                            <a href={project.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
-                            <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(id)}>Description</button>
-                        </div>
+                    <div className='mt-2 mb-5'>
+                        {project.technologies.map((technology, key) => (
+                            <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
+                        ))}
+                    </div>
+
+                    <div className="d-flex justify-content-between">
+                        <a href={project.page} target='_blank'><button className='btn btn-outline-info fw-bold fs-6'>View Project</button></a>
+                        <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(id)}>Description</button>
                     </div>
                 </div>
             </div>
+
 
             {openLightboxIndex !== null && (
                 <Lightbox
