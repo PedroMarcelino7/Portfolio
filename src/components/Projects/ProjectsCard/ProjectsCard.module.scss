@@ -1,0 +1,62 @@
+.project_card {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    cursor: pointer;
+
+    img {
+        height: 200px;
+        transition: all 1s;
+    }
+
+    button {
+        transition: all 1s;
+    }
+
+    .project_description {
+        padding-block: 1rem;
+        padding-inline: 1.5rem;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    &:hover {
+        transform: translate(0, -7px);
+        box-shadow: 0 7px 1px rgba(0, 0, 0, 0.5);
+
+        img {
+            transform: translate(0, -7px);
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            transform: translate(0, -5px);
+            box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media (min-width: 450px) {
+    .project_card {
+        img {
+            height: 250px;
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .project_card {
+        img {
+            height: 300px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .project_card {
+        img {
+            height: 350px;
+        }
+    }
+}
