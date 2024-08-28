@@ -25,8 +25,7 @@ export default function ProjectsMap({ project, id }) {
 
 
     return (
-        <>
-
+        <div className="col-lg-6 mb-3">
             <div className={`rounded-3 ${styles.project_card}`}>
                 <img
                     className='img-fluid rounded-top-3 w-100'
@@ -71,6 +70,6 @@ export default function ProjectsMap({ project, id }) {
                     close={closeLightbox}
                 />
             )}
-        </>
+        </div>
     )
 }

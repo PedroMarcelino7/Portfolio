@@ -1,18 +1,14 @@
-.btn_show {
+.projects {
+    margin-bottom: 10rem;
 
-    button,
-    span {
-        transition: all 0.5s;
-    }
+    .btn_show {
+        .right {
+            animation: toRight 1s infinite;
+        }
 
-    // &:hover {
-    // }
-    .right {
-        animation: toRight 1s infinite;
-    }
-    
-    .left {
-        animation: toLeft 1s infinite;
+        .left {
+            animation: toLeft 1s infinite;
+        }
     }
 }
 

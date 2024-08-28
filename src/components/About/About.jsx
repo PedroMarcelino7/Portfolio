@@ -2,7 +2,7 @@ import styles from './About.module.scss'
 
 export default function About() {
     return (
-        <section id="about">
+        <section id="about" className={styles.about}>
             <div className="container">
                 <div className={`${styles.project_border} p-4 w-100 rounded-3`}>
                     <h1 className='fs-2'>ABOUT ME</h1>

@@ -15,8 +15,7 @@ export const projects = [
         id: 2,
         src: project2,
         title: 'QR Code Generator',
-        description: '',
-        //FALAR QUE ESSE PROJETO TINHA SIDO FEITO COM VUE, E DEPOIS TROCADO PARA REACT
+        description: '', //FALAR QUE ESSE PROJETO TINHA SIDO FEITO COM VUE, E DEPOIS TROCADO PARA REACT
         page: 'https://pedromarcelino7.github.io/QRCodeGenerator',
         technologies: ['React', 'Vue', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
@@ -28,6 +27,46 @@ export const projects = [
         page: 'https://pedromarcelino7.github.io/BillSplitter',
         technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
     },
+    {
+        id: 4,
+        src: [project3, project2, project1],
+        title: 'Bill Splitter',
+        description: '',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+    },
+    {
+        id: 5,
+        src: [project3, project2, project1],
+        title: 'Bill Splitter',
+        description: '',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+    },
+    {
+        id: 6,
+        src: [project3, project2, project1],
+        title: 'Bill Splitter',
+        description: '',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+    },
+    {
+        id: 7,
+        src: [project3, project2, project1],
+        title: 'Bill Splitter',
+        description: '',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+    },
+    {
+        id: 8,
+        src: [project3, project2, project1],
+        title: 'Bill Splitter',
+        description: '',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+    }
 ]
 
 // ---

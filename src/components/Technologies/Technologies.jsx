@@ -24,7 +24,7 @@ export default function Technologies() {
     }, [])
 
     return (
-        <section id='technologies'>
+        <section id='technologies' className={styles.technologies}>
             <div className="container my-5">
                 <Swiper
                     spaceBetween={0}

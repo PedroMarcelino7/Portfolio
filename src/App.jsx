@@ -11,7 +11,7 @@ function App() {
       <div className='overflow'>
         <Header />
 
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Projects />
 
