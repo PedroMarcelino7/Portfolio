@@ -1,71 +1,87 @@
-import project1 from './images/projects/PasswordGenerator.png'
-import project2 from './images/projects/QRCodeGenerator.png'
-import project3 from './images/projects/BillSplitter.png'
+import BillSplitter_1 from '../src/images/projects/BillSplitter/BillSplitter_1.png'
+import Calculator_1 from '../src/images/projects/Calculator/Calculator_1.png'
+import QRCode_1 from '../src/images/projects/QRCode/QRCode_1.png'
+import ToDo_1 from '../src/images/projects/ToDo/ToDo_1.png'
+import ToDo_2 from '../src/images/projects/ToDo/ToDo_2.png'
+import ToDo_3 from '../src/images/projects/ToDo/ToDo_3.png'
+import Movies_1 from '../src/images/projects/Movies/Movies_1.png'
+import Movies_2 from '../src/images/projects/Movies/Movies_2.png'
+import Movies_3 from '../src/images/projects/Movies/Movies_3.png'
+import Movies_4 from '../src/images/projects/Movies/Movies_4.png'
+import Password_1 from '../src/images/projects/Password/Password_1.png'
+import Password_2 from '../src/images/projects/Password/Password_2.png'
+import Password_3 from '../src/images/projects/Password/Password_3.png'
+import Password_4 from '../src/images/projects/Password/Password_4.png'
+import Pokedex_1 from '../src/images/projects/Pokedex/Pokedex_1.png'
+import Pokedex_2 from '../src/images/projects/Pokedex/Pokedex_2.png'
+import Pokedex_3 from '../src/images/projects/Pokedex/Pokedex_3.png'
+import Pokedex_4 from '../src/images/projects/Pokedex/Pokedex_4.png'
+import Pokedex_5 from '../src/images/projects/Pokedex/Pokedex_5.png'
 
 export const projects = [
     {
         id: 1,
-        src: project1,
-        title: 'Password Generator',
+        src: [ToDo_1, ToDo_2, ToDo_3],
+        title: 'To Do List',
         description: '',
-        page: 'https://pedromarcelino7.github.io/PasswordGenerator',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/ToDoTypescript',
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 2,
-        src: project2,
+        src: QRCode_1,
         title: 'QR Code Generator',
-        description: '', //FALAR QUE ESSE PROJETO TINHA SIDO FEITO COM VUE, E DEPOIS TROCADO PARA REACT
+        description: '',
         page: 'https://pedromarcelino7.github.io/QRCodeGenerator',
-        technologies: ['React', 'Vue', 'JavaScript', 'qrious', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        technologies: ['', '', '', '', '', '', '', '']
     },
     {
         id: 3,
-        src: project3,
+        src: BillSplitter_1,
         title: 'Bill Splitter',
         description: '',
         page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 4,
-        src: [project3, project2, project1],
-        title: 'Bill Splitter',
+        src: Calculator_1,
+        title: 'Calculator',
         description: '',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/Calculator',
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 5,
-        src: [project3, project2, project1],
-        title: 'Bill Splitter',
+        src: [Movies_1, Movies_2, Movies_3, Movies_4],
+        title: 'Movies API',
         description: '',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/MoviesAPI',
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 6,
-        src: [project3, project2, project1],
-        title: 'Bill Splitter',
+        src: [Password_1, Password_2, Password_3, Password_4],
+        title: 'Password Generator',
         description: '',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/PasswordGenerator',
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 7,
-        src: [project3, project2, project1],
-        title: 'Bill Splitter',
+        src: [Pokedex_1, Pokedex_2, Pokedex_3, Pokedex_4, Pokedex_5],
+        title: 'Pokedex API',
         description: '',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/Pokedex',
+        technologies: ['', '', '', '', '', '']
     },
     {
         id: 8,
-        src: [project3, project2, project1],
-        title: 'Bill Splitter',
+        src: '',
+        title: 'Secret Word',
         description: '',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Vite', 'Github Pages']
+        page: 'https://pedromarcelino7.github.io/',
+        technologies: ['', '', '', '', '', '']
     }
 ]
 
