@@ -30,7 +30,7 @@ export default function ProjectsMap({ project, id }) {
                 <img
                     className='img-fluid rounded-top-3 w-100'
                     onClick={() => openLightbox(id)}
-                    src={project.src}
+                    src={project.src[0]}
                     alt=""
                 />
 

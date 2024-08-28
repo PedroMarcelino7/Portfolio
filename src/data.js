@@ -29,7 +29,7 @@ export const projects = [
     },
     {
         id: 2,
-        src: QRCode_1,
+        src: [QRCode_1],
         title: 'QR Code Generator',
         description: '',
         page: 'https://pedromarcelino7.github.io/QRCodeGenerator',
@@ -37,7 +37,7 @@ export const projects = [
     },
     {
         id: 3,
-        src: BillSplitter_1,
+        src: [BillSplitter_1],
         title: 'Bill Splitter',
         description: '',
         page: 'https://pedromarcelino7.github.io/BillSplitter',
@@ -45,7 +45,7 @@ export const projects = [
     },
     {
         id: 4,
-        src: Calculator_1,
+        src: [Calculator_1],
         title: 'Calculator',
         description: '',
         page: 'https://pedromarcelino7.github.io/Calculator',
@@ -77,7 +77,7 @@ export const projects = [
     },
     {
         id: 8,
-        src: '',
+        src: [],
         title: 'Secret Word',
         description: '',
         page: 'https://pedromarcelino7.github.io/',
