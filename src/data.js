@@ -17,6 +17,8 @@ import Pokedex_2 from '../src/images/projects/Pokedex/Pokedex_2.png'
 import Pokedex_3 from '../src/images/projects/Pokedex/Pokedex_3.png'
 import Pokedex_4 from '../src/images/projects/Pokedex/Pokedex_4.png'
 import Pokedex_5 from '../src/images/projects/Pokedex/Pokedex_5.png'
+import Github_1 from '../src/images/projects/Github/Github_1.png'
+import Github_2 from '../src/images/projects/Github/Github_2.png'
 
 export const projects = [
     {
@@ -81,6 +83,14 @@ export const projects = [
         title: 'Secret Word',
         description: '',
         page: 'https://pedromarcelino7.github.io/',
+        technologies: ['', '', '', '', '', '']
+    },
+    {
+        id: 9,
+        src: [Github_1, Github_2],
+        title: 'Github API',
+        description: '',
+        page: '',
         technologies: ['', '', '', '', '', '']
     }
 ]
