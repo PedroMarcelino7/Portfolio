@@ -54,19 +54,19 @@ export const projects = [
     },
     {
         id: 4,
-        src: [Calculator_1],
-        title: 'Calculator',
-        description: 'Uma calculadora simples e interativa desenvolvida em TypeScript, que realiza operações matemáticas básicas com precisão. Aproveita a tipagem forte do TypeScript para garantir uma experiência de uso robusta, sendo ideal para integrar em aplicações web que necessitam de cálculos confiáveis.',
-        page: 'https://pedromarcelino7.github.io/Calculator',
-        technologies: ['React', 'TypeScript', 'HTML5', 'CSS3']
+        src: [Github_1, Github_2],
+        title: 'Github API',
+        description: 'Uma aplicação desenvolvida em ReactJS que consome a API do GitHub para exibir informações sobre repositórios, usuários e organizações. Permite aos usuários pesquisar e visualizar dados detalhados do GitHub, como perfil de usuários, atividades em repositórios e estatísticas. Ideal para explorar a integração com APIs e criar interfaces dinâmicas e informativas.',
+        page: '',
+        technologies: ['React', 'JavaScript', 'API', 'HTML5', 'CSS3']
     },
     {
         id: 5,
-        src: [BillSplitter_1],
-        title: 'Bill Splitter',
-        description: 'Este projeto é um aplicativo de divisão de contas desenvolvido em ReactJS, projetado para facilitar o cálculo e a distribuição de despesas entre várias pessoas. Com uma interface intuitiva, o Bill Splitter permite que os usuários insiram os valores das despesas, definam quantas pessoas irão compartilhar o custo e dividam o valor total de maneira justa. O projeto combina a flexibilidade do JavaScript com o poder do React para criar uma solução ágil e eficiente, ideal para situações sociais ou eventos onde a divisão de despesas é necessária.',
-        page: 'https://pedromarcelino7.github.io/BillSplitter',
-        technologies: ['React', 'JavaScript', 'HTML5', 'CSS3']
+        src: [ToDo_1, ToDo_2, ToDo_3],
+        title: 'To Do List',
+        description: 'To Do List é uma aplicação de gerenciamento de tarefas desenvolvida em React com TypeScript, proporcionando uma interface intuitiva e dinâmica para organizar suas atividades diárias. O projeto implementa funcionalidades essenciais como adicionar, editar e excluir tarefas, além de marcar itens como concluídos. Com o uso de TypeScript, a aplicação oferece uma tipagem forte, garantindo maior segurança e escalabilidade no desenvolvimento. A aplicação também faz uso do localStorage para salvar as tarefas, permitindo que elas persistam mesmo após o fechamento do navegador.',
+        page: 'https://pedromarcelino7.github.io/ToDoTypescript',
+        technologies: ['React', 'TypeScript', 'CRUD', 'HTML5', 'CSS3']
     },
     {
         id: 6,
@@ -94,19 +94,19 @@ export const projects = [
     },
     {
         id: 9,
-        src: [Github_1, Github_2],
-        title: 'Github API',
-        description: 'Uma aplicação desenvolvida em ReactJS que consome a API do GitHub para exibir informações sobre repositórios, usuários e organizações. Permite aos usuários pesquisar e visualizar dados detalhados do GitHub, como perfil de usuários, atividades em repositórios e estatísticas. Ideal para explorar a integração com APIs e criar interfaces dinâmicas e informativas.',
-        page: '',
-        technologies: ['React', 'JavaScript', 'API', 'HTML5', 'CSS3']
+        src: [Calculator_1],
+        title: 'Calculator',
+        description: 'Uma calculadora simples e interativa desenvolvida em TypeScript, que realiza operações matemáticas básicas com precisão. Aproveita a tipagem forte do TypeScript para garantir uma experiência de uso robusta, sendo ideal para integrar em aplicações web que necessitam de cálculos confiáveis.',
+        page: 'https://pedromarcelino7.github.io/Calculator',
+        technologies: ['React', 'TypeScript', 'HTML5', 'CSS3']
     },
     {
         id: 10,
-        src: [ToDo_1, ToDo_2, ToDo_3],
-        title: 'To Do List',
-        description: 'To Do List é uma aplicação de gerenciamento de tarefas desenvolvida em React com TypeScript, proporcionando uma interface intuitiva e dinâmica para organizar suas atividades diárias. O projeto implementa funcionalidades essenciais como adicionar, editar e excluir tarefas, além de marcar itens como concluídos. Com o uso de TypeScript, a aplicação oferece uma tipagem forte, garantindo maior segurança e escalabilidade no desenvolvimento. A aplicação também faz uso do localStorage para salvar as tarefas, permitindo que elas persistam mesmo após o fechamento do navegador.',
-        page: 'https://pedromarcelino7.github.io/ToDoTypescript',
-        technologies: ['React', 'TypeScript', 'CRUD', 'HTML5', 'CSS3']
+        src: [BillSplitter_1],
+        title: 'Bill Splitter',
+        description: 'Este projeto é um aplicativo de divisão de contas desenvolvido em ReactJS, projetado para facilitar o cálculo e a distribuição de despesas entre várias pessoas. Com uma interface intuitiva, o Bill Splitter permite que os usuários insiram os valores das despesas, definam quantas pessoas irão compartilhar o custo e dividam o valor total de maneira justa. O projeto combina a flexibilidade do JavaScript com o poder do React para criar uma solução ágil e eficiente, ideal para situações sociais ou eventos onde a divisão de despesas é necessária.',
+        page: 'https://pedromarcelino7.github.io/BillSplitter',
+        technologies: ['React', 'JavaScript', 'HTML5', 'CSS3']
     }
 ]
 

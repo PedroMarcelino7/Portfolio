@@ -12,11 +12,11 @@ export default function Projects() {
                 <div className="row">
                     {showProjects
                         ? projects.map((project) => (
-                            <ProjectsCard project={project} id={project.id} />
+                            <ProjectsCard project={project} id={project.id} key={project.id} />
                         ))
                         : projects.map((project) => (
                             project.id <= 4 && (
-                                <ProjectsCard project={project} id={project.id} />
+                                <ProjectsCard project={project} id={project.id} key={project.id} />
                             )
                         ))
                     }
