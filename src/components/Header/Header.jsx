@@ -8,7 +8,7 @@ export default function Header() {
     const [waveBackground, setWaveBackground] = useState('')
 
     useEffect(() => {
-        darkTheme ? setWaveBackground('rgba(33, 37, 41, 1)') : setWaveBackground('rgba(255, 255, 255, 1)')
+        darkTheme ? setWaveBackground('rgba(5, 5, 5, 1)') : setWaveBackground('rgba(255, 255, 255, 1)')
     }, [darkTheme])
 
     return (

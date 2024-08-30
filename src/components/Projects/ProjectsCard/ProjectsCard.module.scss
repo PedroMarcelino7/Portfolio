@@ -1,8 +1,9 @@
 .project_card {
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(25, 25, 25, 1);
+    border: 2px solid rgba(100, 100, 100, 0.5);
     transition: all 0.5s;
     cursor: pointer;
-
+    
     img {
         height: 200px;
         transition: all 1s;

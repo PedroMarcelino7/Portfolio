@@ -25,9 +25,9 @@ export const projects = [
         id: 1,
         src: [ToDo_1, ToDo_2, ToDo_3],
         title: 'To Do List',
-        description: '',
+        description: 'To Do List é uma aplicação de gerenciamento de tarefas desenvolvida em React com TypeScript, proporcionando uma interface intuitiva e dinâmica para organizar suas atividades diárias. O projeto implementa funcionalidades essenciais como adicionar, editar e excluir tarefas, além de marcar itens como concluídos. Com o uso de TypeScript, a aplicação oferece uma tipagem forte, garantindo maior segurança e escalabilidade no desenvolvimento. A aplicação também faz uso do localStorage para salvar as tarefas, permitindo que elas persistam mesmo após o fechamento do navegador.',
         page: 'https://pedromarcelino7.github.io/ToDoTypescript',
-        technologies: ['', '', '', '', '', '']
+        technologies: ['TypeScript', 'React', 'CRUD', 'HTML5', 'CSS3']
     },
     {
         id: 2,

@@ -4,7 +4,7 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 // Colors
 $primary: #c167ef;
 $secondary: #10bcee;
-$dark: #2b3041;
+$dark: #050505;
 $light: #f3f6f9;
 
 // Navbar
@@ -40,11 +40,11 @@ $spacers: (
   6: $spacer * 6,
   7: $spacer * 8,
   8: $spacer * 12,
-) !default;
+  ) !default;
 
 $line-height-base: 1.7;
 $headings-margin-bottom: $spacer * 1;
 
 $enable-negative-margins: true;
 
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/boostrap/';
