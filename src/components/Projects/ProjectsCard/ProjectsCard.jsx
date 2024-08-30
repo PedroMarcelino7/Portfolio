@@ -44,6 +44,10 @@ export default function ProjectsMap({ project, id }) {
         }
     }
 
+    const showProjectVideo = () => {
+        alert('teste')
+    }
+
     return (
         <div className="col-lg-6 mb-3">
             <div className={`rounded-3 ${styles.project_card}`}>
@@ -51,7 +55,7 @@ export default function ProjectsMap({ project, id }) {
                     className='img-fluid rounded-top-3 w-100'
                     onClick={() => openLightbox(id)}
                     src={project.src[0]}
-                    alt=""
+                    alt={project.title}
                 />
 
                 <div className={styles.project_description}>
@@ -69,8 +73,16 @@ export default function ProjectsMap({ project, id }) {
                     </div>
 
                     <div className="d-flex justify-content-between">
-                        <a href={project.page} target='_blank'>
-                            <button className='btn btn-outline-info fw-bold fs-6'>View Project</button>
+                        <a
+                            href={project.page}
+                            target='_blank'
+                            onClick={project.page ? null : () => showProjectVideo()}
+                        >
+                            <button
+                                className='btn btn-outline-info fw-bold fs-6'
+                            >
+                                View Project
+                            </button>
                         </a>
                         <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(id)}>View Details</button>
                     </div>

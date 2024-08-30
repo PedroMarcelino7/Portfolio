@@ -33,7 +33,7 @@ export const projects = [
         src: [SignInComponent_1, SignInComponent_2, SignInComponent_4, SignInComponent_5, SignInComponent_6, SignInComponent_7],
         title: 'User Registration',
         description: 'Uma aplicação desenvolvida em ReactJS que consome a API do GitHub para exibir informações sobre repositórios, usuários e organizações. Permite aos usuários pesquisar e visualizar dados detalhados do GitHub, como perfil de usuários, atividades em repositórios e estatísticas. Ideal para explorar a integração com APIs e criar interfaces dinâmicas e informativas.',
-        page: '',
+        page: null,
         technologies: ['React', 'TypeScript', 'API', 'Google OAuth', 'MySQL', 'Material UI', 'HTML5', 'CSS3']
     },
     {
@@ -57,7 +57,7 @@ export const projects = [
         src: [Github_1, Github_2],
         title: 'Github API',
         description: 'Uma aplicação desenvolvida em ReactJS que consome a API do GitHub para exibir informações sobre repositórios, usuários e organizações. Permite aos usuários pesquisar e visualizar dados detalhados do GitHub, como perfil de usuários, atividades em repositórios e estatísticas. Ideal para explorar a integração com APIs e criar interfaces dinâmicas e informativas.',
-        page: '',
+        page: null,
         technologies: ['React', 'JavaScript', 'API', 'HTML5', 'CSS3']
     },
     {
