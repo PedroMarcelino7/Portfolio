@@ -19,6 +19,31 @@ export default function ProjectsMap({ project, id }) {
         setOpenLightboxIndex(null)
     }
 
+    const setBadgeColor = (technology) => {
+        switch (technology) {
+            case 'React':
+                return '#58C4DC'
+            case 'TypeScript':
+                return '#3178C6'
+            case 'MySQL':
+                return '#F29221'
+            case 'Material UI':
+                return '#3399FF'
+            case 'HTML5':
+                return '#F76300'
+            case 'CSS3':
+                return '#1F62AE'
+            case 'JavaScript':
+                return '#EFD81D'
+            case 'React Router':
+                return '#F44250'
+            case 'Vue':
+                return '#3FB27F'
+            default:
+                return 'blue'
+        }
+    }
+
     return (
         <div className="col-lg-6 mb-3">
             <div className={`rounded-3 ${styles.project_card}`}>
@@ -34,7 +59,12 @@ export default function ProjectsMap({ project, id }) {
 
                     <div className='mt-2 mb-5'>
                         {project.technologies.map((technology, key) => (
-                            <span className="badge text-bg-primary fs-6 m-1" key={key}>{technology}</span>
+                            <span key={key}
+                                className="badge fs-6 m-1"
+                                style={{ backgroundColor: setBadgeColor(technology) }}
+                            >
+                                {technology}
+                            </span>
                         ))}
                     </div>
 
@@ -56,7 +86,7 @@ export default function ProjectsMap({ project, id }) {
                         slide: ({ slide }) => (
                             <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
                                 <img src={slide.src} alt={slide.title} style={{ width: '100%', marginBottom: '10px' }} />
-                                <p style={{textAlign: 'justify'}}>{slide.description}</p>
+                                <p style={{ textAlign: 'justify' }}>{slide.description}</p>
                             </div>
                         ),
                     }}

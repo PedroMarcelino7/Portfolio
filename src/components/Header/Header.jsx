@@ -42,7 +42,7 @@ export default function Header() {
             </div>
 
             <div className={styles.button_box}>
-                <a href="#navbar">
+                <a href="#projects">
                     <button>
                         <svg className={styles.button_effect} width="180px" height="60px" viewBox="0 0 180 60">
                             <polyline points="179,1 179,59 1,59 1,1 179,1" />
