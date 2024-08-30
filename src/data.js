@@ -19,9 +19,9 @@ import Pokedex_4 from '../src/images/projects/Pokedex/Pokedex_4.png'
 import Pokedex_5 from '../src/images/projects/Pokedex/Pokedex_5.png'
 import Github_1 from '../src/images/projects/Github/Github_1.png'
 import Github_2 from '../src/images/projects/Github/Github_2.png'
+import SignInComponent_video from '../src/images/projects/SignInComponent/SignInComponent_video.mp4'
 import SignInComponent_1 from '../src/images/projects/SignInComponent/SignInComponent_1.png'
 import SignInComponent_2 from '../src/images/projects/SignInComponent/SignInComponent_2.png'
-// import SignInComponent_3 from '../src/images/projects/SignInComponent/SignInComponent_3.png'
 import SignInComponent_4 from '../src/images/projects/SignInComponent/SignInComponent_4.png'
 import SignInComponent_5 from '../src/images/projects/SignInComponent/SignInComponent_5.png'
 import SignInComponent_6 from '../src/images/projects/SignInComponent/SignInComponent_6.png'
@@ -34,7 +34,8 @@ export const projects = [
         title: 'User Registration',
         description: 'Uma aplicação desenvolvida em ReactJS que consome a API do GitHub para exibir informações sobre repositórios, usuários e organizações. Permite aos usuários pesquisar e visualizar dados detalhados do GitHub, como perfil de usuários, atividades em repositórios e estatísticas. Ideal para explorar a integração com APIs e criar interfaces dinâmicas e informativas.',
         page: null,
-        technologies: ['React', 'TypeScript', 'API', 'Google OAuth', 'MySQL', 'Material UI', 'HTML5', 'CSS3']
+        technologies: ['React', 'TypeScript', 'API', 'Google OAuth', 'MySQL', 'Material UI', 'HTML5', 'CSS3'],
+        video: SignInComponent_video
     },
     {
         id: 2,
