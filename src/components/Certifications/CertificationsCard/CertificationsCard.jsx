@@ -1,17 +1,17 @@
 import styles from './CertificationsCard.module.scss'
 
-import teste from '../../../images/projects/Untitled.png'
 
-const CertificationsCard = () => {
+
+const CertificationsCard = ({ certification }) => {
     return (
         <div className={styles.certifications_card}>
             <div className={styles.header}></div>
 
             <div className={styles.content}>
                 <div className={`d-flex ${styles.content_header}`}>
-                    <img src={teste} alt="" />
+                    <img src={certification.image} alt={certification.title} />
 
-                    <h2>Title</h2>
+                    <h2>{certification.title}</h2>
                 </div>
 
                 <p>
@@ -20,7 +20,9 @@ const CertificationsCard = () => {
             </div>
 
             <div className={styles.footer}>
-                <button>View Details</button>
+                <button className={styles.button}>
+                    View Details
+                </button>
             </div>
         </div>
     )

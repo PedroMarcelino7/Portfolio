@@ -144,3 +144,11 @@ export const technologies = [
     { image: technology13 },
     { image: technology14 },
 ]
+
+// ---
+
+import a from './images/certifications/01.png'
+
+export const certifications = [
+    { title: 'TypeScript', description: '', image: a }
+]
