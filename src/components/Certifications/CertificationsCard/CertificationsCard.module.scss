@@ -1,0 +1,48 @@
+.certifications_card {
+    background-color: rgba(25, 25, 25, 1);
+    border: 2px solid rgba(100, 100, 100, 0.5);
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+
+    .header {
+        height: 3.5rem;
+        background-color: red;
+        border-bottom: 2px solid #fff;
+    }
+
+    .content {
+        padding-inline: 2rem;
+
+        .content_header {
+            margin-top: -2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            img {
+                width: 35%;
+
+                border: 1px solid blue;
+                border-radius: 0.5rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+}
