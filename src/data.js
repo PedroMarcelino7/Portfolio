@@ -90,7 +90,7 @@ export const projects = [
         src: [],
         title: 'Secret Word',
         description: 'Um jogo de adivinhação de palavras desenvolvido em ReactJS. Os jogadores tentam descobrir uma palavra secreta com base em dicas e tentativas limitadas. A aplicação oferece uma interface simples e interativa, permitindo uma experiência de jogo divertida e desafiadora. Ideal para quem busca uma implementação prática de lógica de jogo e manipulação de estados em React.',
-        page: '',
+        page: null,
         technologies: ['React', 'JavaScript', 'HTML5', 'CSS3']
     },
     {

@@ -1,75 +1,13 @@
-@keyframes rotate {
-    100% {
-        transform: rotate(1turn);
-    }
-}
-
 .about {
-    margin-bottom: 10rem;
+    background-color: #050505;
 
-    .project_border {
-        position: relative;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        overflow: hidden;
 
-        &::before {
-            content: '';
-            position: absolute;
-            z-index: -2;
-            left: -50%;
-            top: -50%;
-            width: 700px;
-            height: 700px;
-            background-size: 50% 50%, 50% 50%;
-            background-image: linear-gradient(#000, #555), linear-gradient(#222, #000), linear-gradient(#000, #444), linear-gradient(#000, #333);
-            animation: rotate 5s linear infinite;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            left: 2px;
-            top: 2px;
-            width: calc(100% - 4px);
-            height: calc(100% - 4px);
-            background: #212529;
-            border-radius: 5px;
-        }
-    }
-}
-
-@media (min-width: 450px) {
-    .about {
-        .project_border {
-            &::before {
-                width: 1000px;
-                height: 700px;
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) {
-    .about {
-        .project_border {
-            &::before {
-                width: 1500px;
-                height: 1500px;
-            }
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .about {
-        .project_border {
-            &::before {
-                width: 2500px;
-                height: 1500px;
-            }
-        }
+    .button {
+        padding-inline: 1.5rem;
+        padding-block: 0.75rem;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        display: flex;
+        gap: 0.5rem;
     }
 }
