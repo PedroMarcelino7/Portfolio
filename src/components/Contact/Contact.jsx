@@ -9,8 +9,6 @@ const Contact = () => {
 
         formData.append("access_key", accessKey)
 
-        const email = formData.get('email')
-
         const object = Object.fromEntries(formData)
         const json = JSON.stringify(object)
 
@@ -24,7 +22,7 @@ const Contact = () => {
         }).then((res) => res.json())
 
         if (res.success) {
-            alert('deu certo!')
+            alert('E-mail sent!')
         }
     }
 
