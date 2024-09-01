@@ -1,7 +1,6 @@
 .about {
     background-color: #050505;
 
-
     .button {
         padding-inline: 1.5rem;
         padding-block: 0.75rem;
@@ -9,5 +8,6 @@
         background-color: transparent;
         display: flex;
         gap: 0.5rem;
+        border: 2px solid #444;
     }
 }
