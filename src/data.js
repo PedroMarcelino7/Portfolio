@@ -150,5 +150,9 @@ export const technologies = [
 import a from './images/certifications/01.png'
 
 export const certifications = [
-    { title: 'TypeScript', description: '', image: a }
+    { title: 'TypeScript', description: '', image: a },
+    { title: 'TypeScript', description: '', image: a },
+    { title: 'TypeScript', description: '', image: a },
+    { title: 'TypeScript', description: '', image: a },
+    { title: 'TypeScript', description: '', image: a },
 ]
