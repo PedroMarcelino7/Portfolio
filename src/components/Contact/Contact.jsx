@@ -30,16 +30,22 @@ const Contact = () => {
         <div className={styles.contact}>
             <div className={styles.contact_box}>
                 <form onSubmit={(event) => onSubmit(event)}>
-                    <input className={styles.input} name='name' placeholder='Name' />
+                    <input className={styles.input} name='name' placeholder='Your NAME' />
 
-                    <input className={styles.input} name='email' placeholder='E-mail' />
+                    <input className={styles.input} name='email' placeholder='Your E-MAIL' />
 
-                    <textarea className={styles.input} name='message' placeholder='Message'></textarea>
+                    <textarea className={styles.input} name='message' placeholder='Leave a message'></textarea>
 
                     <div className={styles.submit_container}>
-                        <div className={styles.file_box}>
-                            <i class="bi bi-paperclip"></i>
-                        </div>
+                        <label htmlFor="fileInput" className={styles.file_box}>
+                            <i className="bi bi-paperclip"></i>
+                        </label>
+                        <input
+                            type="file"
+                            id="fileInput"
+                            name='file'
+                            className={styles.file_input}
+                        />
 
                         <button type='submit' className={styles.button}>
                             Submit
