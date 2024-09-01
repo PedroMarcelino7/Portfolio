@@ -7,6 +7,10 @@ import { useState } from 'react'
 const About = () => {
     const [showModal, setShowModal] = useState(false)
 
+    const handleShowModal = (status) => {
+        setShowModal(status)
+    }
+
     return (
         <>
             <div className={styles.about}>
@@ -19,7 +23,7 @@ const About = () => {
                                         About me
                                     </h1>
 
-                                    <button className={styles.button} onClick={() => setShowModal(true)}>
+                                    <button className={styles.button} onClick={() => handleShowModal(true)}>
                                         <span><i class="bi bi-download"></i> </span> Download C.V.
                                     </button>
                                 </div>
@@ -40,7 +44,7 @@ const About = () => {
                 </div>
             </div>
 
-            {showModal && <Curriculum />}
+            {showModal && <Curriculum handleShowModal={handleShowModal} />}
         </>
     )
 }
