@@ -37,19 +37,27 @@ const Contact = () => {
                     <textarea className={styles.input} name='message' placeholder='Leave a message'></textarea>
 
                     <div className={styles.submit_container}>
-                        <label htmlFor="fileInput" className={styles.file_box}>
-                            <i className="bi bi-paperclip"></i>
-                        </label>
-                        <input
-                            type="file"
-                            id="fileInput"
-                            name='file'
-                            className={styles.file_input}
-                        />
+                        <div>
+                            <label htmlFor="fileInput" className={styles.file_box}>
+                                <i className="bi bi-paperclip"></i>
+                            </label>
+                            <input
+                                type="file"
+                                id="fileInput"
+                                name='file'
+                                className={styles.file_input}
+                            />
+                        </div>
 
                         <button type='submit' className={styles.button}>
                             Submit
                         </button>
+
+                        <div>
+                            <button className={styles.whatsapp}>
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
