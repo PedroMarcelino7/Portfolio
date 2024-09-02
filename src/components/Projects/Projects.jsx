@@ -22,10 +22,15 @@ export default function Projects() {
                     }
                 </div>
 
-                <div className={`${styles.btn_show} d-flex justify-content-center align-items-center`}>
-                    <span className={styles.right}><i className='bi bi-chevron-double-right'></i></span>
-                    <button className='btn btn-lg border-0' onClick={() => setShowProjects(!showProjects)}>All Projects</button>
-                    <span className={styles.left}><i className='bi bi-chevron-double-left'></i></span>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <button
+                        className={`${styles.button} d-flex justify-content-center align-items-center gap-4`}
+                        onClick={() => setShowProjects(!showProjects)}
+                    >
+                        <span className={styles.right}><i className='bi bi-chevron-double-right'></i></span>
+                        {showProjects ? 'Hide Projects' : 'All Projects'}
+                        <span className={styles.left}><i className='bi bi-chevron-double-left'></i></span>
+                    </button>
                 </div>
             </div>
         </section>
