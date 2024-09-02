@@ -30,6 +30,8 @@ const Contact = () => {
     return (
         <div className={styles.contact}>
             <div className={styles.contact_box}>
+                <h1 className={styles.title}>Send me a message!</h1>
+
                 <form onSubmit={(event) => onSubmit(event)}>
                     <input className={styles.input} name='name' placeholder='Your NAME' />
 
