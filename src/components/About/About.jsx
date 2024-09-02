@@ -1,8 +1,9 @@
-import Technologies from '../Technologies/Technologies'
 import styles from './About.module.scss'
 
-import Curriculum from './Modal/Curriculum'
 import { useState } from 'react'
+
+import Curriculum from './Modal/Curriculum'
+import Technologies from './Technologies/Technologies'
 
 const About = () => {
     const [showModal, setShowModal] = useState(false)

@@ -1,9 +1,7 @@
 import styles from './Technologies.module.scss'
 
-import { useState, useEffect } from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { technologies } from '../../data'
+import { technologies } from '../../../data'
 
 export default function Technologies() {
     return (
