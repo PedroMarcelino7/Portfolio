@@ -2,6 +2,7 @@ import styles from './Contact.module.scss'
 
 const Contact = () => {
     const accessKey = import.meta.env.VITE_EMAIL_ACCESS_KEY;
+    const whatsapp = import.meta.env.VITE_WHATSAPP_API
 
     const onSubmit = async (event) => {
         event.preventDefault()
@@ -54,9 +55,9 @@ const Contact = () => {
                         </button>
 
                         <div>
-                            <button className={styles.whatsapp}>
+                            <a href={`${whatsapp}Hello, leave me a message!`} target="_blank" className={styles.whatsapp}>
                                 <i class="bi bi-whatsapp"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </form>
