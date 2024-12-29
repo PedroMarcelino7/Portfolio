@@ -2,9 +2,9 @@ import styles from './Curriculum.module.scss'
 
 import curriculum from '../../../images/Pedro_Paulo_Marcelino.pdf'
 
-const Curriculum = ({ handleShowModal }) => {
+const Curriculum = ({ handleShowCurriculum }) => {
     return (
-        <div className={styles.modal_container} onClick={() => handleShowModal(false)}>
+        <div className={styles.modal_container} onClick={() => handleShowCurriculum(false)}>
             <div className={styles.modal_box}>
                 <iframe
                     src={curriculum}

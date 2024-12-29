@@ -4,12 +4,18 @@ import { useState } from 'react'
 
 import Curriculum from './Modal/Curriculum'
 import Technologies from './Technologies/Technologies'
+import ReadMoreModal from './ReadMoreModal/ReadMoreModal'
 
 const About = () => {
-    const [showModal, setShowModal] = useState(false)
+    const [showCurriculum, setShowCurriculum] = useState(false)
+    const [showReadMore, setShowReadMore] = useState(false)
 
-    const handleShowModal = (status) => {
-        setShowModal(status)
+    const handleShowCurriculum = (status) => {
+        setShowCurriculum(status)
+    }
+
+    const handleShowReadMore = (status) => {
+        setShowReadMore(status)
     }
 
     return (
@@ -24,14 +30,20 @@ const About = () => {
                                         About me
                                     </h1>
 
-                                    <button className={styles.button} onClick={() => handleShowModal(true)}>
-                                        <span><i class="bi bi-download"></i> </span> Download C.V.
+                                    <button className={styles.download_button} onClick={() => handleShowCurriculum(true)}>
+                                        <span><i class="bi bi-download"></i></span> Download C.V.
                                     </button>
                                 </div>
 
-                                <p style={{ textAlign: 'justify' }}>
+                                <p className='mt-4' style={{ textAlign: 'justify' }}>
                                     Olá! Sou Pedro Paulo Marcelino de Almeida, estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web. Trabalho com linguagens como JavaScript, PHP, e Python, além de frameworks modernos como React e Next.js. Tenho experiência prática em projetos que envolvem APIs, sistemas de estoque, e mais, sempre em busca de novas oportunidades para aprimorar minhas habilidades e contribuir para soluções eficientes. Vamos trocar ideias e explorar novas colaborações!
                                 </p>
+
+                                <div className="d-flex justify-content-end">
+                                    <button className={styles.read_more_button} onClick={() => handleShowReadMore(true)}>
+                                        Read more...
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -42,7 +54,8 @@ const About = () => {
                 </div>
             </div>
 
-            {showModal && <Curriculum handleShowModal={handleShowModal} />}
+            {showCurriculum && <Curriculum handleShowCurriculum={handleShowCurriculum} />}
+            {showReadMore && <ReadMoreModal handleShowReadMore={handleShowReadMore} />}
         </>
     )
 }

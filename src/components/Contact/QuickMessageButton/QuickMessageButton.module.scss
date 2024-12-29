@@ -1,0 +1,20 @@
+.container {
+  z-index: 1000;
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  display: flex;
+
+  .box {
+    display: flex;
+    background-color: #000;
+    padding: 1.25rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

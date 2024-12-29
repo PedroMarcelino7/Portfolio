@@ -1,4 +1,5 @@
 import styles from './Contact.module.scss'
+import QuickMessageButton from './QuickMessageButton/QuickMessageButton';
 
 const Contact = () => {
     const accessKey = import.meta.env.VITE_EMAIL_ACCESS_KEY;
@@ -28,43 +29,47 @@ const Contact = () => {
     }
 
     return (
-        <div className={styles.contact}>
-            <div className={styles.contact_box}>
-                <h1 className={styles.title}>Send me a message!</h1>
+        <>
+            <div className={styles.contact} id='contact'>
+                <div className={styles.contact_box}>
+                    <h1 className={styles.title}>Send me a message!</h1>
 
-                <form onSubmit={(event) => onSubmit(event)}>
-                    <input className={styles.input} name='name' placeholder='Your NAME' />
+                    <form onSubmit={(event) => onSubmit(event)}>
+                        <input className={styles.input} name='name' placeholder='Your NAME' />
 
-                    <input className={styles.input} name='email' placeholder='Your E-MAIL' />
+                        <input className={styles.input} name='email' placeholder='Your E-MAIL' />
 
-                    <textarea className={styles.input} name='message' placeholder='Leave a message'></textarea>
+                        <textarea className={styles.input} name='message' placeholder='Leave a message'></textarea>
 
-                    <div className={styles.submit_container}>
-                        <div>
-                            <label htmlFor="fileInput" className={styles.file_box}>
-                                <i className="bi bi-paperclip"></i>
-                            </label>
-                            <input
-                                type="file"
-                                id="fileInput"
-                                name='file'
-                                className={styles.file_input}
-                            />
+                        <div className={styles.submit_container}>
+                            <div>
+                                <label htmlFor="fileInput" className={styles.file_box}>
+                                    <i className="bi bi-paperclip"></i>
+                                </label>
+                                <input
+                                    type="file"
+                                    id="fileInput"
+                                    name='file'
+                                    className={styles.file_input}
+                                />
+                            </div>
+
+                            <button type='submit' className={styles.button}>
+                                Submit
+                            </button>
+
+                            <div>
+                                <a href={`${whatsapp}Hello, leave me a message!`} target="_blank" className={styles.whatsapp}>
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
-
-                        <button type='submit' className={styles.button}>
-                            Submit
-                        </button>
-
-                        <div>
-                            <a href={`${whatsapp}Hello, leave me a message!`} target="_blank" className={styles.whatsapp}>
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
+
+            <QuickMessageButton />
+        </>
     )
 }
 
