@@ -1,155 +1,166 @@
 header {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-background);
+
+  .title {
+    font-family: "Righteous", sans-serif;
+
+    h1 {
+      color: var(--white);
+
+      span {
+        color: var(--black);
+      }
+    }
+
+    h2 {
+      color: var(--white);
+
+      span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: var(--black);
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+
+  .socials_container {
+    ul {
+      li {
+        z-index: 2;
+        cursor: pointer;
+
+        a {
+          position: relative;
+          display: block;
+          width: 60px;
+          height: 60px;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          font-size: 30px;
+          transition: 0.5s;
+          color: var(--white);
+
+          &:hover {
+            background: var(--primary-background);
+
+            &::before {
+              transform: scale(1.1);
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: all 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+          }
+        }
+
+        #instagram {
+          &:hover {
+            color: #f00a10;
+            box-shadow: 0 0 5px #f00a10;
+            text-shadow: 0 0 5px #f00a10;
+
+            &::before {
+              box-shadow: 0 0 15px #f00a10;
+              background: #f00a10;
+            }
+          }
+        }
+
+        #github {
+          &:hover {
+            color: #9e5eb8;
+            box-shadow: 0 0 5px #9e5eb8;
+            text-shadow: 0 0 5px #9e5eb8;
+
+            &::before {
+              box-shadow: 0 0 15px #9e5eb8;
+              background: #9e5eb8;
+            }
+          }
+        }
+
+        #linkedin {
+          &:hover {
+            color: #006eab;
+            box-shadow: 0 0 5px #006eab;
+            text-shadow: 0 0 5px #006eab;
+
+            &::before {
+              box-shadow: 0 0 15px #006eab;
+              background: #006eab;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button_box {
+    transform: translate(0, 0);
+    z-index: 2;
+
+    button {
+      width: 180px;
+      height: 60px;
+      cursor: pointer;
+      border: 1px solid var(--white);
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+
+      .button_effect {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: var(--white);
+        stroke-width: 5px;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 1s ease-in-out;
+      }
+
+      span {
+        color: var(--white);
+      }
+    }
+
+    button:hover {
+      transform: translate(-5px, -5px);
+      box-shadow: 5px 5px 5px var(--dark-gray);
+
+      .button_effect {
+        transform: translate(-5px, -5px);
+        background-color: transparent;
+        border: none;
+        stroke-dashoffset: -480;
+      }
+    }
+  }
+
+  .svg_background {
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(33, 37, 41, 1);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
-    .title {
-        font-family: "Righteous", sans-serif;
-
-        h1 {
-            span {
-                color: #000;
-            }
-        }
-
-        h2 {
-            span {
-                text-decoration: underline;
-                text-decoration-style: wavy;
-                text-decoration-color: #000;
-                text-decoration-thickness: 2px;
-            }
-        }
-    }
-
-    .socials_container {
-        ul {
-            li {
-                z-index: 2;
-                cursor: pointer;
-
-                a {
-                    position: relative;
-                    display: block;
-                    width: 60px;
-                    height: 60px;
-                    text-align: center;
-                    line-height: 60px;
-                    border-radius: 50%;
-                    font-size: 30px;
-                    transition: .5s;
-                    color: #fff;
-
-                    &:hover {
-                        background: #050505;
-
-                        &::before {
-                            transform: scale(1.1);
-                        }
-                    }
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                        transition: all 0.5s;
-                        transform: scale(0.9);
-                        z-index: -1;
-                    }
-                }
-
-                #instagram {
-                    &:hover {
-                        color: #F00A10;
-                        box-shadow: 0 0 5px #F00A10;
-                        text-shadow: 0 0 5px #F00A10;
-
-                        &::before {
-                            box-shadow: 0 0 15px #F00A10;
-                            background: #F00A10;
-                        }
-                    }
-                }
-
-                #github {
-                    &:hover {
-                        color: #9E5EB8;
-                        box-shadow: 0 0 5px #9E5EB8;
-                        text-shadow: 0 0 5px #9E5EB8;
-
-                        &::before {
-                            box-shadow: 0 0 15px #9E5EB8;
-                            background: #9E5EB8;
-                        }
-                    }
-                }
-
-                #linkedin {
-                    &:hover {
-                        color: #006EAB;
-                        box-shadow: 0 0 5px #006EAB;
-                        text-shadow: 0 0 5px #006EAB;
-
-                        &::before {
-                            box-shadow: 0 0 15px #006EAB;
-                            background: #006EAB;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-    .button_box {
-        transform: translate(0, 0);
-        z-index: 2;
-
-        button {
-            width: 180px;
-            height: 60px;
-            cursor: pointer;
-            border: 1px solid #ffffff;
-            background: transparent;
-            transition: all 0.5s ease-in-out;
-
-            .button_effect {
-                position: absolute;
-                left: 0;
-                top: 0;
-                fill: none;
-                stroke: #fff;
-                stroke-width: 5px;
-                stroke-dasharray: 150 480;
-                stroke-dashoffset: 150;
-                transition: 1s ease-in-out;
-            }
-        }
-
-        button:hover {
-            transform: translate(-5px, -5px);
-            box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.15);
-
-            .button_effect {
-                transform: translate(-5px, -5px);
-                background-color: transparent;
-                border: none;
-                stroke-dashoffset: -480;
-            }
-        }
-    }
-
-    .svg_background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
+  .wave_bg {
+    stop-color: var(--secondary-background);
+  }
 }
