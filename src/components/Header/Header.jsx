@@ -112,7 +112,7 @@ export default function Header() {
             </svg>
 
             <div onClick={() => setDarkTheme(!darkTheme)}>
-                {/* <Theme /> */}
+                <Theme />
             </div>
         </header >
     )

@@ -31,15 +31,15 @@ const About = () => {
                                     </h1>
 
                                     <button className={styles.download_button} onClick={() => handleShowCurriculum(true)}>
-                                        <span><i class="bi bi-download"></i></span> Download C.V.
+                                        <span><i className="bi bi-download"></i></span> Download C.V.
                                     </button>
                                 </div>
 
-                                <p className='mt-4' style={{ textAlign: 'justify' }}>
+                                <p className='mt-4 fs-5' style={{ textAlign: 'justify' }}>
                                     I’m Pedro Paulo Marcelino, a student of Systems Analysis and Development with a strong passion for technology and programming. I’m specializing in front-end development with experience in technologies like React, Next.js, and TypeScript, while also having knowledge in back-end tools such as Node.js, PHP, and Python.
                                 </p>
 
-                                <div className="d-flex justify-content-end">
+                                <div className="d-flex justify-content-end fs-5">
                                     <button className={styles.read_more_button} onClick={() => handleShowReadMore(true)}>
                                         Read more...
                                     </button>

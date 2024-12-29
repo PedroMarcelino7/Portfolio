@@ -4,3 +4,4 @@ Criar tradução
 
 Arrumar cursos
 
+Apagar formulario de contato ao enviar e-mail

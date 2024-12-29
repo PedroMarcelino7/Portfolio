@@ -28,6 +28,8 @@ const ReadMoreModal = ({ handleShowReadMore }) => {
                         If you share my passion for technology or are looking for partners for challenging projects, I’d be delighted to connect. Let’s talk!
                     </p>
                 </div>
+
+                
             </div>
         </div >
     )

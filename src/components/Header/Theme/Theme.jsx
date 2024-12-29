@@ -1,21 +1,17 @@
-import { useEffect, useState } from 'react'
 import styles from './Theme.module.scss'
+import { useEffect, useState } from 'react'
+import { useTheme } from '../../../contexts/ThemeContext'
 
 export default function Theme() {
-    const [theme, setTheme] = useState(true)
-
-    useEffect(() => {
-        const htmlElement = document.querySelector('html');
-        htmlElement.setAttribute('data-bs-theme', theme ? 'dark' : 'light')
-    }, [theme]);
+    const { theme, toggleTheme } = useTheme()
 
     return (
         <div className={styles.theme_container}>
             <div
                 className={`d-flex justify-content-center align-items-center rounded-circle text-center ${styles.theme_box}`}
-                onClick={() => setTheme(!theme)}
+                onClick={toggleTheme}
             >
-                {theme ?
+                {theme === 'dark' ?
                     <i className="fs-4 text-white bi bi-brightness-high-fill"></i>
                     :
                     <i className="fs-4 text-white bi bi-moon-fill"></i>

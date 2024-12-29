@@ -60,7 +60,7 @@ const Contact = () => {
 
                             <div>
                                 <a href={`${whatsapp}Hello, leave me a message!`} target="_blank" className={styles.whatsapp}>
-                                    <i class="bi bi-whatsapp"></i>
+                                    <i className="bi bi-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
