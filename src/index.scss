@@ -2,6 +2,7 @@
   // Default colors
   --black: #101010;
   --white: #f8f4f2;
+  --blue: rgb(0, 50, 200);
   --gray: #ccc;
   --dark-gray: #444;
 
@@ -13,6 +14,10 @@
   // Buttons
   --primary-button-background: rgba(5, 5, 5, 1);
   --secondary-button-background: rgba(10, 10, 10, 1);
+
+  // Text
+  --primary-title: rgba(220, 225, 230, 1);
+  --primary-text: rgba(200, 200, 200, 1);
 }
 
 .dark {
@@ -20,7 +25,7 @@
   --black: #f8f4f2;
   --white: #101010;
   --gray: #444;
-  --dark-gray: rgba(255, 255, 255, 1);
+  --dark-gray: #444;
 
   // Backgrounds
   --primary-background: rgba(200, 200, 200, 1);
@@ -30,6 +35,10 @@
   // Buttons
   --primary-button-background: rgba(5, 5, 5, 1);
   --secondary-button-background: rgba(10, 10, 10, 1);
+
+  // Text
+  --primary-title: rgba(15, 10, 15, 1);
+  --primary-text: rgba(15, 20, 25, 1);
 }
 
 * {

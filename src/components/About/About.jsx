@@ -26,7 +26,7 @@ const About = () => {
                         <div className="col-7">
                             <div className="d-flex flex-column">
                                 <div className='d-flex justify-content-between align-items-center'>
-                                    <h1 className='fs-1'>
+                                    <h1 className={`fs-1 ${styles.title}`}>
                                         About me
                                     </h1>
 
@@ -35,7 +35,7 @@ const About = () => {
                                     </button>
                                 </div>
 
-                                <p className='mt-4 fs-5' style={{ textAlign: 'justify' }}>
+                                <p className={`mt-4 fs-5 ${styles.paragraph}`} style={{ textAlign: 'justify' }}>
                                     I’m Pedro Paulo Marcelino, a student of Systems Analysis and Development with a strong passion for technology and programming. I’m specializing in front-end development with experience in technologies like React, Next.js, and TypeScript, while also having knowledge in back-end tools such as Node.js, PHP, and Python.
                                 </p>
 
