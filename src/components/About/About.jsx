@@ -36,7 +36,7 @@ const About = () => {
                                 </div>
 
                                 <p className='mt-4' style={{ textAlign: 'justify' }}>
-                                    Olá! Sou Pedro Paulo Marcelino de Almeida, estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web. Trabalho com linguagens como JavaScript, PHP, e Python, além de frameworks modernos como React e Next.js. Tenho experiência prática em projetos que envolvem APIs, sistemas de estoque, e mais, sempre em busca de novas oportunidades para aprimorar minhas habilidades e contribuir para soluções eficientes. Vamos trocar ideias e explorar novas colaborações!
+                                    I’m Pedro Paulo Marcelino, a student of Systems Analysis and Development with a strong passion for technology and programming. I’m specializing in front-end development with experience in technologies like React, Next.js, and TypeScript, while also having knowledge in back-end tools such as Node.js, PHP, and Python.
                                 </p>
 
                                 <div className="d-flex justify-content-end">
