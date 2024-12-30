@@ -28,7 +28,7 @@ export default function Projects() {
                         onClick={() => setShowProjects(!showProjects)}
                     >
                         <span className={styles.right}><i className='bi bi-chevron-double-right'></i></span>
-                        {showProjects ? 'Hide Projects' : 'All Projects'}
+                        <span>{showProjects ? 'Hide Projects' : 'All Projects'}</span>
                         <span className={styles.left}><i className='bi bi-chevron-double-left'></i></span>
                     </button>
                 </div>

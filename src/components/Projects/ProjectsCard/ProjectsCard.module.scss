@@ -1,6 +1,6 @@
 .project_card {
-    background-color: rgba(25, 25, 25, 1);
-    border: 2px solid rgba(100, 100, 100, 0.5);
+    background-color: var(--primary-background);
+    border: 2px solid var(--dark-gray);
     transition: all 0.5s;
     cursor: pointer;
     
@@ -17,23 +17,27 @@
         padding-block: 1rem;
         padding-inline: 1.5rem;
 
+        h1 {
+            color: var(--primary-title);
+        }
+
         p {
             text-align: justify;
         }
     }
 
     &:hover {
-        transform: translate(0, -7px);
-        box-shadow: 0 7px 1px rgba(0, 0, 0, 0.5);
+        transform: translate(0, -5px);
+        box-shadow: 0 7px 1px var(--black);
 
         img {
-            transform: translate(0, -7px);
-            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.5);
+            transform: translate(0, -15px);
+            box-shadow: 0 5px 1px var(--dark-gray);
         }
 
         button {
             transform: translate(0, -5px);
-            box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 1px var(--dark-gray);
         }
     }
 }
