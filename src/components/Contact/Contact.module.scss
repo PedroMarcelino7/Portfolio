@@ -1,75 +1,76 @@
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 250px;
 
-    .contact_box {
-        max-width: 550px;
-        width: 100%;
-        padding: 1.5rem;
-        background-color: var(--box-background);
-        border-radius: 5px;
+  .contact_box {
+    max-width: 550px;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--box-background);
+    border-radius: 5px;
+    transition: all 0.5s;
 
-        
-        .title {
-            font-size: 1.75rem;
-            color: var(--primary-title);
-            margin-bottom: 1rem;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            .input {
-                width: 100%;
-                padding-inline: 1rem;
-                padding-block: 0.5rem;
-                border-radius: 5px;
-                border: 2px solid var(--dark-gray);
-                background-color: var(--secondary-background);
-            }
-
-            textarea {
-                min-height: 100px;
-                max-height: 200px;
-            }
-
-            .submit_container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.5rem;
-
-                .file_box, .whatsapp {
-                    width: 3rem;
-                    border: 2px solid var(--dark-gray);
-                    background-color: var(--primary-background);
-                    border-radius: 5px;
-                    padding-block: 0.5rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: var(--white);
-                    cursor: pointer;
-                }
-
-                .file_input {
-                    display: none;
-                }
-
-                .button {
-                    color: var(--white);
-                    width: 100%;
-                    border: 2px solid var(--dark-gray);
-                    background-color: var(--secondary-background);
-                    border-radius: 5px;
-                    padding-block: 0.5rem;
-                }
-            }
-        }
+    .title {
+      font-size: 1.75rem;
+      color: var(--primary-title);
+      margin-bottom: 1rem;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .input {
+        width: 100%;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--dark-gray);
+        background-color: var(--secondary-background);
+      }
+
+      textarea {
+        min-height: 100px;
+        max-height: 200px;
+      }
+
+      .submit_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .file_box,
+        .whatsapp {
+          width: 3rem;
+          border: 2px solid var(--dark-gray);
+          background-color: var(--primary-background);
+          border-radius: 5px;
+          padding-block: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: var(--white);
+          cursor: pointer;
+        }
+
+        .file_input {
+          display: none;
+        }
+
+        .button {
+          color: var(--white);
+          width: 100%;
+          border: 2px solid var(--dark-gray);
+          background-color: var(--secondary-background);
+          border-radius: 5px;
+          padding-block: 0.5rem;
+        }
+      }
+    }
+  }
 }

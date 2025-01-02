@@ -1,15 +1,18 @@
 .about {
   padding-top: 250px;
-
+  
   .title {
+    transition: all 0.5s;
     color: var(--primary-title);
   }
-
+  
   .paragraph {
+    transition: all 0.5s;
     color: var(--primary-text);
   }
-
+  
   .download_button {
+    transition: all 0.5s;
     padding-inline: 1.5rem;
     padding-block: 0.75rem;
     border-radius: 0.5rem;
@@ -19,8 +22,9 @@
     border: 2px solid var(--dark-gray);
     color: var(--primary-title);
   }
-
+  
   .read_more_button {
+    transition: all 0.5s;
     color: var(--blue);
     background-color: transparent;
     border: none;

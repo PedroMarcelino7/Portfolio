@@ -82,12 +82,12 @@ export default function ProjectsMap({ project, id }) {
                                 onClick={project.page ? null : () => handleShowProjectVideo(project.id)}
                             >
                                 <button
-                                    className='btn btn-outline-info fw-bold fs-6'
+                                    className={`${styles.card_button} btn fw-bold fs-6`}
                                 >
                                     View Project
                                 </button>
                             </a>
-                            <button className='btn btn-outline-info fw-bold fs-6' onClick={() => openLightbox(id)}>View Details</button>
+                            <button className={`${styles.card_button} btn fw-bold fs-6`} onClick={() => openLightbox(id)}>View Details</button>
                         </div>
                     </div>
                 </div>

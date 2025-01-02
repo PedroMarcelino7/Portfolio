@@ -2,15 +2,15 @@
     background-color: var(--primary-background);
     border: 2px solid var(--dark-gray);
     transition: all 0.5s;
-    cursor: pointer;
     
     img {
         height: 200px;
         transition: all 1s;
+        cursor: pointer;
     }
 
     button {
-        transition: all 1s;
+        transition: all 0.5s;
     }
 
     .project_description {
@@ -24,6 +24,18 @@
         p {
             text-align: justify;
         }
+
+        .card_button {
+            color: var(--info);
+            border: 2px solid var(--info);
+            transition: all 0.5s;
+            
+            &:hover {
+                color: var(--white);
+                border: 2px solid var(--white);
+                background-color: var(--dark-gray);
+            }
+        }
     }
 
     &:hover {
@@ -31,7 +43,7 @@
         box-shadow: 0 7px 1px var(--black);
 
         img {
-            transform: translate(0, -15px);
+            transform: translate(0, -5px);
             box-shadow: 0 5px 1px var(--dark-gray);
         }
 
