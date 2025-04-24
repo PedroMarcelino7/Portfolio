@@ -30,7 +30,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className={styles.contact} id='contact'>
+            <div className={`${styles.contact} container px-4 px-md-0`} id='contact'>
                 <div className={styles.contact_box}>
                     <h1 className={styles.title}>Send me a message!</h1>
 

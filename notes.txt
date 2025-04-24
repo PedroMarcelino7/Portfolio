@@ -1,7 +1,7 @@
 Arrumar modo claro
-> Switcher de tema
 > Botão de quick message
-> Botões do card de projeto
+
+Arrumar responsividade
 
 Criar tradução
 

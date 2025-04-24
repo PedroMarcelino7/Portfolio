@@ -8,7 +8,7 @@ export default function Projects() {
 
     return (
         <section id="projects" className={styles.projects}>
-            <div className="container pt-5">
+            <div className="container px-4 px-md-0 pt-5">
                 <div className="row">
                     {showProjects
                         ? projects.map((project) => (

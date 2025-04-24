@@ -21,9 +21,9 @@ const About = () => {
     return (
         <>
             <div className={styles.about} id='about'>
-                <div className="container">
+                <div className="container px-4 px-md-0">
                     <div className="row d-flex align-items-center">
-                        <div className="col-7">
+                        <div className="col-12 col-md-7">
                             <div className="d-flex flex-column">
                                 <div className='d-flex justify-content-between align-items-center'>
                                     <h1 className={`fs-1 ${styles.title}`}>
@@ -47,7 +47,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="col-5">
+                        <div className="col-12 col-md-5 mt-5 mt-md-0">
                             <Technologies />
                         </div>
                     </div>
